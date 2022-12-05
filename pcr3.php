@@ -1,6 +1,6 @@
 <?php
 if($fp = fopen('https://toyokeizai.net/sp/visual/tko/covid19/csv/severe_daily.csv','r')){
-  echo "pcr1 ({csv:[";
+  echo "pcr3 ({csv:[";
   while ($line = fgets($fp)){
     $arrayList = preg_split("[,]",$line);
     $arrayList[1] = trim($arrayList[1]);
